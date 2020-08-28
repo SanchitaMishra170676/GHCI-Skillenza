@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+  <!-- Required meta tags always come first -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+   <!-- Bootstrap CSS -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/bootstrap-social/bootstrap-social.css">
+<link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+
+    <!-- endbulid -->
+    <title>Shop Registration</title>
+    <style media="screen">
+      body{
+        padding-top : 100px;
+        padding-bottom:100px;
+        padding-left : 200px;
+        padding-right: 200px;
+         background-color: lightgrey !important;
+         font-family: "Times New Roman", Times, serif;
+      }
+      .sbt{
+         background-color: lightgrey !important;
+      }
+      .vd{
+        width: 100%;
+        }
+      .cv{
+        width: 100%;
+      }
+      .mdl{
+        background-color: #FFF8DC !important;
+      }
+      .hv:hover{
+        color: gray !important;
+         background-color: black !important;
+      }
+      .logo{
+        padding-left: 50px;
+        width: 300px;
+        height: 150px;
+      }
+    </style>
+</head>
+
+<body>
+
+
+<!-- reserve form -->
+<div id="reserve" class="modal fade" role="dialog">
+<div class="modal-dialog modal-lg" role="content">
+<!-- Modal content-->
+<div class="modal-content mdl">
+  <div class="modal-header">
+      <h3 class="d-flex justify-content-center modal-title ">Click Your Picture</h3>
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+  </div>
+  <div class="modal-body">
+    <div class="video-wrap">
+      <video id="video" class="vd " playsinline autoplay ></video>
+    </div>
+    <div class="controller">
+    <button class="form-control hv sbt" id="snap" name="button"><b>Capture</b> </button>
+  </div class="cv"  >
+    <canvas id="canvas" width="360" height="520"></canvas>
+    <button class="form-control hv sbt" data-dismiss="modal" onclick='closewebcam()' name="button"><b>Submit</b> </button>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- form -->
+
+
+      <div class="card wow slideInDown ">
+        <div class="row d-flex">
+          <img class="logo " src="images/logo.png" alt="">
+            <h2 class="d-flex offset-2 justify-content-center align-self-center card-title p-4">Shop Registrartion form</h2>
+          </div>
+        <div class="card-body">
+          <form class="form-horizontal" action="index.html" method="post">
+              <div class="form-group row">
+                <label for="first-name" class="col-2">Owner's First Name:</label>
+                  <input class="form-control col-10" type="text" name="" value=""  required placeholder="Owner's First Name">
+              </div>
+              <div class="form-group row">
+                <label for="Last Name" class="col-2">Owner's Last Name:</label>
+                  <input class="form-control col-10" type="text" name="" value=""   placeholder="Owner's Last Name">
+              </div>
+              <div class="form-group row">
+                        <label class="col-2" for="Investment">Gender</label>
+                        <select  class="form-control col-10 " id="Gender" required name="Gender">
+                          <option value="Active">Male</option>
+                          <option value="Deactive">Female</option>
+                          <option value="Deactive">Others</option>
+                        </select>
+              </div>
+              <div class="form-group row">
+                <label for="Address" class="col-2">Owner's Address:</label>
+                  <input class="form-control col-10" type="address" name="" value=""  required  placeholder="Owner'sAddress">
+              </div>
+              <div class="form-group row">
+                <label for="Email" class="col-2">Email:</label>
+                  <input class="form-control col-10" type="email" name="" value=""  required placeholder="Email" onblur="this.style.borderColor= this.checkValidity() ? 'green' : 'red'" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+              </div>
+              <div class="form-group row">
+                <label for="Phone No." class="col-2">Phone no.</label>
+                  <input class="form-control col-10" type="tel" name="" value=""   required  placeholder="Phone no." onblur="this.style.borderColor= this.checkValidity() ? 'green' : 'red'" name="phone" pattern="[6-9][0-9]{9}$">
+              </div>
+              <div class="form-group row">
+                <label for="Occupation" class="col-2">Occupation:</label>
+                  <input class="form-control col-10" type="text" name="" value=""  required placeholder="Occupation">
+              </div>
+              <div class="form-group row">
+                <label for="Shop Name" class="col-2">Shop Name:</label>
+                  <input class="form-control col-10" type="text" name="" value=""   required placeholder="Shop Name">
+              </div>
+              <div class="form-group row">
+                <label for="Shop Name" class="col-2">Shop Address:</label>
+                  <input class="form-control col-10" type="address" name="" value=""  required  placeholder="Shop Address">
+              </div>
+              <div class="form-group row">
+                <label for="Shop Name" class="col-2">No. of delivery persons available:</label>
+                  <input class="form-control col-10" type="number" name="" value=""  required  placeholder="No. of delivery persons">
+              </div>
+              <div class="form-group row">
+                        <label class="col-2" for="Investment">Shop Type</label>
+                        <select  class="form-control col-10 " id="Investment" required name="Investment">
+                          <option value="Active">Groceries</option>
+                          <option value="Deactive">Dairy</option>
+                          <option value="Deactive">Medical</option>
+                          <option value="Deactive">Others</option>
+                        </select>
+              </div>
+              <div class="form-group row">
+                <label for="Shop Name" class="col-2">Shop Description:</label>
+                  <input class="form-control col-10" type="address" name="" value="" required  placeholder="Shop Name">
+              </div>
+              <div class="form-group row">
+                <label for="User-name" class="col-2">User Name:</label>
+                  <input class="form-control col-10" type="text" name="" value=""  required placeholder="User Name">
+              </div>
+              <div class="form-group row">
+                <label for="password" class="col-2">Password:</label>
+                  <input class="form-control col-10" type="password" name="" value=""  required placeholder="Password">
+              </div>
+              <div class="form-group row">
+                <label for="cnf-password" class="col-2">Confirm Password:</label>
+                  <input class="form-control col-10" type="password" name="" value="" required placeholder="Confirm Password">
+              </div>
+              <div class="form-group">
+                <label for="identity" class="col-12 ">Upload your Aadhar card or any identity proof:</label>
+                  <input  class="offset-2" type="file" name="fileToUpload" id="fileToUpload" required name="#">
+              </div>
+              <div class="form-group">
+                <label for="photograph" class="col-12 ">Click/ Upload your photograph:</label>
+                <div class="offset-2 pb-2">
+                  <a role="button" class="btn hv"  data-toggle="modal" data-target="#reserve" href="#reserve" onclick='openwebcam()'>Use Camera</a>
+                </div>
+                  <div class="offset-2 ">
+                    <input   type="file" name="fileToUpload" id="fileToUpload"  name="#">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <button class="form-control hv sbt"  name="button"><b>Submit</b> </button>
+              </div>
+
+          </form>
+        </div>
+
+      </div>
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+   <script>
+   new WOW().init();
+   </script>
+
+   <script >
+
+	function openwebcam(){
+'use strict';
+
+const video = document.getElementById('video');
+const canvas = document.getElementById('canvas');
+const snap = document.getElementById("snap");
+const errorMsgElement = document.querySelector('span#errorMsg');
+
+const constraints = {
+  audio: false,
+  video: {
+    width: 1280, height: 720
+  }
+};
+
+
+async function init() {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia(constraints);
+    handleSuccess(stream);
+  } catch (e) {
+    errorMsgElement.innerHTML = `navigator.getUserMedia error:${e.toString()}`;
+  }
+}
+
+
+function handleSuccess(stream) {
+  window.stream = stream;
+  video.srcObject = stream;
+}
+
+
+init();
+
+var context = canvas.getContext('2d');
+snap.addEventListener("click", function() {
+	context.drawImage(video, 0, 0, 360, 520);
+});
+}
+
+</script>
+
+  <script type="text/javascript">
+
+      	function closewebcam(){
+      'use strict';
+      stream.getTracks().forEach(function(track) {
+      track.stop();
+      });
+      };
+  </script>
+<!-- build:js js.main/js -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/b605b6abff.js"></script>
+      <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+      <!-- TOOL TIP <script>
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+      });
+      </script> -->
+        <!--  Pause and play button codeof carousel -->
+      <!-- <script>
+     $(document).ready(function(){
+         $("#mycarousel").carousel( { interval: 2000 } );
+         $("#carousel-pause").click(function(){
+             $("#mycarousel").carousel('pause');
+         });
+         $("#carousel-play").click(function(){
+             $("#mycarousel").carousel('cycle');
+         });
+     });
+
+     Single button code of Carousel -->
+<script src="js/scripts.js"></script>
+<!-- endbulid -->
+
+
+
+
+</body>
+
+</html>

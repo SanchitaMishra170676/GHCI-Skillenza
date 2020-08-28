@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Dynalight' rel='stylesheet'>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>AAshray</title>
+    <style>
+      body{
+         font-family: "Times New Roman", Times, serif;
+         padding-left: 20px;
+         padding-right: 20px;
+         
+      }
+      /* lightsteelblue */
+
+    </style>
+  </head>
+  <body>
+  <!-- Navbar -->
+  <div id="navbar" >
+    <a href="#default" id="logo"><img src="images/logo.png" alt="image" style="width:200px;height:100px";></a>
+    <div id="navbar-right">
+      <div>
+      <a class="active ns" href="index.html">Home</a>
+      <a role="button" type="button" href="#Login" class="ns" data-toggle="modal"  data-target="#Login">Log in <span class="sr-only">(current)</span></a>
+      <a role="button" type="button" href="#Signup" class="ns" data-toggle="modal"  data-target="#Signup">Sign up <span class="sr-only">(current)</span></a></div>
+        <div class="col d-flex justify-content-end">
+          <p class="mt-3 d-flex">
+            <a href="www.facebook.com" class="d-flex align-items-center justify-content-center ns"><span class="fa fa-facebook mx-2" style="color:black"><i class="sr-only">Facebook</i></span></a>
+            <a href="www.twitter.com" class="d-flex align-items-center justify-content-center ns"><span class="fa fa-twitter mx-2" style="color: black"><i class="sr-only">Twitter</i></span></a>
+            <a href="www.instagram.com" class="d-flex align-items-center justify-content-center ns"><span class="fa fa-instagram mx-2" style="color: black"><i class="sr-only">Instagram</i></span></a>
+            <a href="www.dribbble.com" class="d-flex align-items-center justify-content-center ns"><span class="fa fa-dribbble mx-2" style="color: black"><i class="sr-only">Dribbble</i></span></a>
+          </p>
+        </div>
+    </div>
+  </div>
+  <!-- Modals -->
+  <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="LoginLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="LoginLabel">Log In
+                </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form name="lform">
+                    <h5>Log In for:</h5>
+                    <div class="form-check">
+                      <div><i class="fa fa-caret-right"></i> <a href="F1signin.html" class="ms">Volunteering </a></div>
+                    </div>
+                    <div class="form-check">
+                      <div><i class="fa fa-caret-right"></i> <a href="F2signin.html" class="ms">Receiving Help </a></div>
+                    </div>
+                    <div class="form-check">
+                      <div><i class="fa fa-caret-right"></i> <a href="F4signin.html" class="ms"> Your Store </a></div>
+                    </div>
+                    <div class="form-check">
+                      <div><i class="fa fa-caret-right"></i> <a href="F5signin.html" class="ms"> Order Stuffs </a></div>
+                    </div>
+                    <div class="form-check">
+                      <div><i class="fa fa-caret-right"></i> <a href="F7signin.html" class="ms"> Donating Plasma </a></div>
+                    </div>
+                    <div class="form-check">
+                      <div><i class="fa fa-caret-right"></i> <a href="F8signin.html" class="ms"> Contacting Plasma Donors </a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="modal fade" id="Signup" tabindex="-1" role="dialog" aria-labelledby="SignupLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="SignupLabel">Sign Up
+                  </h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <h5>Sign Up for:</h5>
+                  <form name="sform">
+                    <div class="form-check">
+                      <div><i class="fa fa-caret-right"></i> <a href="F1signin.html" class="ms">Volunteering </a></div>
+                    </div>
+                    <div class="form-check">
+                      <div><i class="fa fa-caret-right"></i> <a href="F2signin.html" class="ms">Receiving Help </a></div>
+                    </div>
+                    <div class="form-check">
+                      <div><i class="fa fa-caret-right"></i> <a href="F4signin.html" class="ms"> Your Store </a></div>
+                    </div>
+                    <div class="form-check">
+                      <div><i class="fa fa-caret-right"></i> <a href="F5signin.html" class="ms"> Order Stuffs </a></div>
+                    </div>
+                    <div class="form-check">
+                      <div><i class="fa fa-caret-right"></i> <a href="F7signin.html" class="ms"> Donating Plasma </a></div>
+                    </div>
+                    <div class="form-check">
+                      <div><i class="fa fa-caret-right"></i> <a href="F8signin.html" class="ms"> Contacting Plasma Donors </a></div>
+                    </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+  <!-- Scooter animation -->
+    <div class="container-fluid">
+      <div class="row" style="margin-top: 50px;">
+      <img src="images/bg.jpg" style="min-width: 100%; max-height: 600px;" />
+      </div>
+      <div style="margin-top: -140px;">
+      <img class="boy" src="images/fg.png" style="max-height: 250px; max-width: 265px;" >
+      </div>
+    </div>
+  <!-- Features -->
+  <div class="wow">
+    <div class="container">
+      <div class="row" style="padding-top: 80px;">
+  <!-- Feature1 -->
+        <div class="col-md-4 p-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/F1.png" class="features">
+              </div>
+              <div class="flip-card-back">
+                <p class="ctxt"><br>Volunteering is a renowned skill often intended to promote goodness or to improve quality of life.  Be a volunteer and seek the blessings of those who are in need! Earn grants as a secondary source of income by following your passion with care and responsibility.</p>
+                <a href="F1signin.html"><button class="cbtn">EXPLORE</button></a>
+              </div>
+            </div>
+          </div>
+      </div>
+  <!-- Feature2 -->
+     <section class="animate_animated animate_zoomIn" data-wow-duration="4s" data-wow-delay="30s">
+      <div class="col-md-4 p-4 wow zoomIn">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/F2.png" class="features">
+            </div>
+            <div class="flip-card-back">
+              <p class="ctxt"><br><br><br>Need help? Get in touch with our self motivated volunteers who are delighted to help you in every situation.</p>
+              <a href="F2signin.html"><button class="cbtn">EXPLORE</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+   <!-- Feature3 -->
+      <div class="col-md-4 p-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+             <div class="flip-card-front">
+               <img src="images/F3.png" class="features">
+             </div>
+          <div class="flip-card-back">
+          <p class="ctxt"><br><br>Confused ? How to differentiate between precautions and fake news? Find the best health and care advise here.  Stay safe stay sound!</p>
+          <a href="precautionary-page.html"><button class="cbtn">EXPLORE</button></a>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+<div class="row">
+  <!-- Feature4 -->
+    <section class="animate_animated animate_zoomIn" data-wow-duration="4s" data-wow-delay="30s">
+        <div class="col-md-4 p-4 wow zoomIn">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/F4.png" class="features">
+              </div>
+              <div class="flip-card-back">
+                <p class="ctxt"><br><br>Thinking to expand your business this quarantine? Get started by registering your store and help every one by providing home delivery during this time of emergency.</p>
+                <a href="F4signin.html"><button class="cbtn">EXPLORE</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  <!-- Feature5 -->
+      <div class="col-md-4 p-4 wow">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/F5.png" class="features">
+            </div>
+            <div class="flip-card-back">
+              <p class="ctxt"><br><br><br>Get your stuff delivered from the registered stores in your locality. Be it medicine or groceries, give it a chance!</p>
+              <a href="F5signin.html"><button class="cbtn">EXPLORE</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Feature6 -->
+    <section class="animate_animated zoomIn" data-wow-duration="4s" data-wow-delay="40s">
+      <div class="col-md-4 p-4 wow zoomIn">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/F6.png" class="features">
+            </div>
+            <div class="flip-card-back">
+              <p class="ctxt"><br>We understand it's difficult to dwell in these hard times but every thing happens for good! Find out your silver line and live for it. Stay filled with enthusiasm and stay motivated using our content.</p>
+              <a href="anti-dep-page.html"><button class="cbtn">EXPLORE</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   </div>
+<div class="row">
+  <!-- Feature7 -->
+        <div class="col-md-4 p-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/F7.png" class="features">
+              </div>
+              <div class="flip-card-back">
+                <p class="ctxt"><br><br>Congratulations to the patients who recovered from corona but still we've a lot fighting for their lives in the hospital. Work for a nobel cause and fill out the Donor Eligibility Form.</p>
+                <a href="F7signin.html"><button class="cbtn">EXPLORE</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+  <!-- Feature8 -->
+    <section class="animate_animated animate_zoomIn" data-wow-duration="4s" data-wow-delay="50s">
+      <div class="col-md-4 p-4 wow zoomIn">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/F8.png" class="features">
+            </div>
+            <div class="flip-card-back">
+              <p class="ctxt"><br><br>The pleasure would all be ours, if we could help you out in your hours of need. Connect with the plasma donors and make a quick recovery, for others longing to see you well.</p>
+              <a href="F8signin.html"><button class="cbtn">EXPLORE</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Feature9 -->
+    <div class="col-md-4 p-4">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/F9.png" class="features">
+          </div>
+          <div class="flip-card-back">
+            <p class="ctxt"><br>Perfection is unattainable! Help us improve by submitting your feedback. Your response matters a lot for our growth and development. Share with us any difficulty, bad or good experiences and let us know how could we help you.</p>
+            <a href="feedback.html"><button class="cbtn">EXPLORE</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+   <!-- Project desc section -->
+<div class="description-cnt">
+  <!-- Aim -->
+    <div class="aim desc-cnt row">
+        <div class="img-fluid offset-md-2 col-md-2 wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s"  style="visibility: visible;">
+          <img class="img-1 d-none d-md-block" src="images/aim.png" alt="img-1">
+        </div>
+        <div class="content col-12 col-md-6 wow slideInRight" data-wow-duration="1.5s" data-wow-delay="0.5s"  style="visibility: visible;">
+          <h2 id="aim">Our Aim</h2>
+            <p style="font-size: larger;">To create a mutual platform for the self motivated individuals and our senior citizens who are in acute need of help especially during this time of corona. The volunteers willing to help can not only earn grants but also the blessing of our elders. Further we're also working on adding several features including plasma donation to help everyone in the prevailing environment. The project is made for a social cause in the larger benefit of the society.</p>
+        </div>
+    </div>
+   <!-- Choose us -->
+   <div class="aim desc-cnt row">
+      <div class="content offset-md-2 col-12 col-md-6 wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.6s"  style="visibility: visible;">
+         <h2 id="choose">Why choose us?</h2>
+         <p style="font-size: larger;">Unlike other applications who are providing their own delivery persons and employees we've created a mutual platform where any self motivated individual can work and earn more than mere currency. Moreover, features like order on phone call which are kept keeping in mind the non-technicalities of elderly people make this project unique and efficient.</p>
+        </div>
+       <div class="img-fluid col-md-2 d-sm-block wow slideInRight" data-wow-duration="1.5s" data-wow-delay="0.7s"  style="visibility: visible;">
+         <img class="img-1 d-none d-md-block" src="images/choose.png" alt="img-1">
+       </div>
+
+   </div>
+    <!-- futute -->
+    <div class="aim desc-cnt row fp">
+        <div class="img-fluid offset-md-2 col-md-2 wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.6s"  style="visibility: visible;">
+          <img class="img-1 d-none d-md-block" src="images/future.png" alt="img-1">
+        </div>
+        <div class="content  col-12 col-md-6 wow slideInRight" data-wow-duration="1.5s" data-wow-delay="0.9s"  style="visibility: visible;">
+          <h2 id="future">Future Plan</h2>
+          <p style="font-size: larger;">To add lot more features to help the society in these  kind of circumstances and increasing our security features side by side by implementing accurate authentication and making the project more dynamic. </p>
+            </div>
+    </div>
+   </div>
+
+  <!-- Footer -->
+    <footer>
+      <div class="container-fluid mt-3" id="bla" style="padding-top: 40px; padding-bottom: 40px; padding-left: 60px; padding-right: 60px;">
+      <div class="container" style="padding-bottom: 50px; padding-top: 50px;">
+
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="footer-widget">
+                      <h3 id="wh" style="margin-bottom: 15px;">Our Services</h3>
+                          <div><i class="fa fa-caret-right" id="wh"></i> <a href="F1signin.html" id="wh">Register as a Volunteer </a></div>
+                          <div><i class="fa fa-caret-right" id="wh"></i> <a href="F2signin.html" id="wh">Need a Volunteer</a></div>
+                          <div><i class="fa fa-caret-right" id="wh"></i> <a href="F4signin.html" id="wh">Register a Shop</a></div>
+                          <div><i class="fa fa-caret-right" id="wh"></i> <a href="F5signin.html" id="wh">Order from a shop</a></div>
+                          <div><i class="fa fa-caret-right" id="wh"></i> <a href="F7signin.html" id="wh">Donate Plasma</a></div>
+                          <div><i class="fa fa-caret-right" id="wh"></i> <a href="F8signin.html" id="wh">Need Plasma</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                      <div class="footer-widget">
+                          <h3 id="wh" style="margin-bottom: 15px;">Quick Links</h3>
+                              <div><i class="fa fa-caret-right" id="wh"></i> <a href="about-us.html" id="wh">About Us </a></div>
+                              <div><i class="fa fa-caret-right" id="wh"></i> <a href="#aim" id="wh">Our Aim</a></div>
+                              <div><i class="fa fa-caret-right" id="wh"></i> <a href="#choose" id="wh">Why Choose us?</a></div>
+                              <div><i class="fa fa-caret-right" id="wh"></i> <a href="#future" id="wh">Future Plan</a></div>
+                              <div><i class="fa fa-caret-right" id="wh"></i> <a href="feedback.html" id="wh">Feedback</a></div>
+                      </div>
+                </div>
+                <div class="col-lg-3">
+                      <div class="footer-widget">
+                          <h3 id="wh" style="margin-bottom: 15px;">Social</h3>
+                              <div><i class="fa fa-facebook" id="wh"></i> <a href="www.facebook.com" id="wh">Facebook</a></div>
+                              <div><i class="fa fa-instagram" id="wh"></i> <a href="www.instagram.com" id="wh">Instagram</a></div>
+                              <div><i class="fa fa-whatsapp" id="wh"></i> <a href="www.whatsapp.com" id="wh">WhatsApp</a></div>
+                              <div><i class="fa fa-twitter" id="wh"></i> <a href="www.twitter.com" id="wh">Twitter</a></div>
+                              <div><i class="fa fa-dribbble" id="wh"></i> <a href="www.dribbble.com" id="wh">Dribbble</a></div>
+                      </div>
+                </div>
+                <div class="col-lg-3">
+                      <div class="footer-widget">
+                          <h3 id="wh" style="margin-bottom: 15px;">Contact Us</h3>
+                              <div id="wh"><i class="fa fa-map-marker" id="wh"></i> Kiet, Ghaziabad </div>
+                              <div id="wh"><i class="fa fa-phone" id="wh"></i> (+91) 8439705872 </div>
+                              <div id="wh"><i class="fa fa-envelope" id="wh"></i> info.aashray@gmail.com</div>
+                              <div id="wh"><i class="fa fa-clock-o" id="wh"></i> Mon - Sat, 08 AM - 06 PM</div>
+                      </div>
+                </div>
+              </div>
+   </div>
+   <div class="col-sm-12">
+       <p class="ft">Designed with ❤️ By <a target="_blank" href="about-us.html">Team AAshray</a></p>
+   </div>
+   <!-- Corona on footer -->
+      <img class="corona x1" src="images/corona.png">
+      <img class="corona x2" src="images/corona.png">
+      <img class="corona x3" src="images/corona.png">
+      <img class="corona x4" src="images/corona.png">
+      <img class="corona x5" src="images/corona.png">
+      <img class="corona x6" src="images/corona.png">
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

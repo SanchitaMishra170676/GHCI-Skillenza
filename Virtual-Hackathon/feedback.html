@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Dynalight' rel='stylesheet'>
+      <link rel="stylesheet" href="style.css">
+    <title>Welcome</title>
+    <style media="screen">
+      body{
+         font-family: "Times New Roman", Times, serif;
+         padding-left: 20px;
+         padding-right: 20px;
+         padding-top: 200px;
+      }
+      .container-fluid {
+        background-color: lightgrey;
+      }
+      .sbt{
+       background-color: lightgrey;
+     }
+     .card {
+    box-shadow: 0 6px 8px 4px rgba(0,0,0,0.2);
+     }
+     .card-body {
+      font-size: large;
+     }
+     .heading{
+        color: black;
+         text-shadow: 2px 2px pink;
+         font-size:60px;
+     }
+     .sheading{
+        color: black;
+        font-size:40px;
+     }
+    </style>
+  </head>
+  <body>
+    <!-- nav -->
+    <div id="navbar">
+    <a href="#default" id="logo"><img src="images/logo.png" alt="image" style="width:200px;height:100px";></a>
+    <div id="navbar-right">
+      <div>
+      <a class="ns" href="index.html">Home</a>
+      <a class="ns" href="about-us.html">About Us</a>
+      <a class="active ns mr-4" href="feedback.html">Contact Us</a> </div>
+        <div class="col d-flex justify-content-end">
+          <p class="mt-3 d-flex">
+            <a href="www.facebook.com" class="d-flex align-items-center justify-content-center ns"><span class="fa fa-facebook mx-2" style="color:black"><i class="sr-only">Facebook</i></span></a>
+            <a href="www.twitter.com" class="d-flex align-items-center justify-content-center ns"><span class="fa fa-twitter mx-2" style="color: black"><i class="sr-only">Twitter</i></span></a>
+            <a href="www.instagram.com" class="d-flex align-items-center justify-content-center ns"><span class="fa fa-instagram mx-2" style="color: black"><i class="sr-only">Instagram</i></span></a>
+            <a href="www.dribbble.com" class="d-flex align-items-center justify-content-center ns"><span class="fa fa-dribbble mx-2" style="color: black"><i class="sr-only">Dribbble</i></span></a>
+          </p>
+        </div>
+    </div>
+  </div>
+  <!-- nav -end -->
+  <div class="container-fluid pt-4 pb-4">
+      <div class="offset-2 col-8 wow rollIn">
+              <div class="card">
+                <div class="d-flex justify-content-center card-title p-2 pt-4">
+                  <h1 class="heading">Feedback!!</h1>
+                </div>
+                <div class="card-body offset-3 col-6">
+                  <form role="form" method="post" id="reused_form">
+                    <div class="d-flex justify-content-start pb-2">
+                      <h3 class="sheading">Please provide your feedback below:</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 form-group">
+                            <label>How do you rate your overall experience?</label>
+                            <p>
+                                <label class="radio-inline pr-4">
+                                    <input type="radio" name="experience" id="radio_experience" value="bad" >
+                                    <i class="fa fa-frown-o fa-2x" aria-hidden="true"></i> Bad 
+                                </label>
+                                <label class="radio-inline pr-4">
+                                    <input type="radio" name="experience" id="radio_experience" value="average" >
+                                    <i class="fa fa-meh-o fa-2x" aria-hidden="true"></i> Just OK 
+                                </label>
+                                <label class="radio-inline pr-4">
+                                    <input type="radio" name="experience" id="radio_experience" value="good" >
+                                    <i class="fa fa-smile-o fa-2x" aria-hidden="true"></i> Good 
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <label>Did you found what you needed?</label>
+                            <p>
+                                <label class="radio-inline pr-4">
+                                    <input type="radio" name="experience1" id="radio_experience" value="all" >
+                                    Yes, all of it
+                                </label>
+                                <label class="radio-inline pr-4">
+                                    <input type="radio" name="experience1" id="radio_experience" value="some" >
+                                    Yes, some of it
+                                </label>
+                                <label class="radio-inline pr-4">
+                                    <input type="radio" name="experience1" id="radio_experience" value="none" >
+                                    No, none of it
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                        <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <label>How much satisfied were you with your visit on our website?</label>
+                            <p>
+                                <label class="radio-inline pr-4">
+                                    <input type="radio" name="experience2" id="radio_experience" value="very satisfied" >
+                                    Very satisfied
+                                </label>
+                                <label class="radio-inline pr-4">
+                                    <input type="radio" name="experience2" id="radio_experience" value="satisfied" >
+                                   satisfied 
+                                </label>
+                                <label class="radio-inline pr-4">
+                                    <input type="radio" name="experience2" id="radio_experience" value="neutral" >
+                                  neutral
+                                </label>
+                                <label class="radio-inline pr-4">
+                                    <input type="radio" name="experience2" id="radio_experience" value="dissatisfied" >
+                                   dissatisfied
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <label for="comments"> What should we change in order to live up to your expectations?</label>
+                            <textarea class="form-control" type="textarea" id="comments" placeholder="Suggest some improvements.." name="comments" maxlength="6000" rows="3"></textarea>
+                        </div>
+                    </div>
+                  <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <label for="comments"> Comments:</label>
+                            <textarea class="form-control" type="textarea" id="comments" placeholder="Do comment.." name="comments" maxlength="6000" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="name"> Your Name:</label>
+                            <input type="text" class="form-control" placeholder="Your Name.." id="name" name="name" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="email"> Email:</label>
+                            <input type="email" class="form-control" placeholder="Your Email address.." id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button type="submit" class="btn btn-lg pull-right sbt"> <i class="fa fa-send-o " aria-hidden="true"></i> Send &rarr;</button>
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+      </div>
+  </div>
+  <!-- Footer -->
+<footer>
+      <div class="container-fluid mt-3" id="bla" style="padding-top: 40px; padding-bottom: 40px; padding-left: 60px; padding-right: 60px;">
+      <div class="container" style="padding-bottom: 50px; padding-top: 50px;">
+
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="footer-widget">
+                      <h3 id="wh" style="margin-bottom: 15px;">Our Services</h3>
+                          <div><i class="fa fa-caret-right" id="wh"></i> <a href="F1signin.html" id="wh">Register as a Volunteer </a></div>
+                          <div><i class="fa fa-caret-right" id="wh"></i> <a href="F2signin.html" id="wh">Need a Volunteer</a></div>
+                          <div><i class="fa fa-caret-right" id="wh"></i> <a href="F4signin.html" id="wh">Register a Shop</a></div>
+                          <div><i class="fa fa-caret-right" id="wh"></i> <a href="F5signin.html" id="wh">Order from a shop</a></div>
+                          <div><i class="fa fa-caret-right" id="wh"></i> <a href="F7signin.html" id="wh">Donate Plasma</a></div>
+                          <div><i class="fa fa-caret-right" id="wh"></i> <a href="F8signin.html" id="wh">Need Plasma</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                      <div class="footer-widget">
+                          <h3 id="wh" style="margin-bottom: 15px;">Quick Links</h3>
+                              <div><i class="fa fa-caret-right" id="wh"></i> <a href="about-us.html" id="wh">About Us </a></div>
+                              <div><i class="fa fa-caret-right" id="wh"></i> <a href="#aim" id="wh">Our Aim</a></div>
+                              <div><i class="fa fa-caret-right" id="wh"></i> <a href="#choose" id="wh">Why Choose us?</a></div>
+                              <div><i class="fa fa-caret-right" id="wh"></i> <a href="#future" id="wh">Future Plan</a></div>
+                              <div><i class="fa fa-caret-right" id="wh"></i> <a href="feedback.html" id="wh">Feedback</a></div>
+                      </div>
+                </div>
+                <div class="col-lg-3">
+                      <div class="footer-widget">
+                          <h3 id="wh" style="margin-bottom: 15px;">Social</h3>
+                              <div><i class="fa fa-facebook" id="wh"></i> <a href="www.facebook.com" id="wh">Facebook</a></div>
+                              <div><i class="fa fa-instagram" id="wh"></i> <a href="www.instagram.com" id="wh">Instagram</a></div>
+                              <div><i class="fa fa-whatsapp" id="wh"></i> <a href="www.whatsapp.com" id="wh">WhatsApp</a></div>
+                              <div><i class="fa fa-twitter" id="wh"></i> <a href="www.twitter.com" id="wh">Twitter</a></div>
+                              <div><i class="fa fa-dribbble" id="wh"></i> <a href="www.dribbble.com" id="wh">Dribbble</a></div>
+                      </div>
+                </div>
+                <div class="col-lg-3">
+                      <div class="footer-widget">
+                          <h3 id="wh" style="margin-bottom: 15px;">Contact Us</h3>
+                              <div id="wh"><i class="fa fa-map-marker" id="wh"></i> Kiet, Ghaziabad </div>
+                              <div id="wh"><i class="fa fa-phone" id="wh"></i> (+91) 8439705872 </div>
+                              <div id="wh"><i class="fa fa-envelope" id="wh"></i> info.aashray@gmail.com</div>
+                              <div id="wh"><i class="fa fa-clock-o" id="wh"></i> Mon - Sat, 08 AM - 06 PM</div>
+                      </div>
+                </div>
+              </div>
+    </div>
+    <div class="col-sm-12">
+       <p class="ft">Designed with ❤️ By <a target="_blank" href="about-us.html">Team AAshray</a></p>
+    </div>
+    </div>
+    </footer>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
