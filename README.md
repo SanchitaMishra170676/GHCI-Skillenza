@@ -55,7 +55,7 @@ With features like plasma donation, precautionary advice and motivational source
 > The biggest challenge in front of of us was to provide security to our users as to how could we deal with the payment system without any trust issues. Choosing the best technology to build this application was another major challenge. 
 Finally we ended up deciding the use of structured databases for storing information and identity for security purpose while using decentralized approach for the payment purpose with proper smart contracts that are capable of dealing with the fraud situations.
 
-## FUTURE PLANS FOR AVLAMB
+## FUTURE PLANS FOR AASHRAY
 We're planning to make it multi platform and add some additional features along with improving the security and authentication processes of the application. 
 - ***Connect with Medical Staff*** : We're planning to a medical features that will connect people with renowned doctors across the globe. 
 - ***Easing with employment*** : We're trying to connect the recruiters with the potential employees keeping in view that the crisis unbalanced the ratio of employed and unemployed.
