@@ -5,7 +5,7 @@
 
 
 <br><p align="center"> 
-[![Watch the video](https://github.com/HAC-2020/Quaranteam/blob/master/SS.PNG)](https://www.youtube.com/watch?v=Hslm-TOzNNE&feature=youtu.be "Watch Complete Video - Hover to see this")
+[![Watch the video](https://github.com/SanchitaMishra170676/Virtual-Hackathon/blob/master/SS.PNG)](https://www.youtube.com/watch?v=Hslm-TOzNNE&feature=youtu.be "Watch Complete Video - Hover to see this")
   </p>
   <br>
 
