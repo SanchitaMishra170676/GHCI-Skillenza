@@ -1,4 +1,4 @@
-#Virtual Hackathon
+# Virtual Hackathon
 
 ## QUARANTEAM : [Vanshika Singhal,](https://www.linkedin.com/in/vanshika-singhal-3a4a301a7/ "View Linkdin Profile") [Sakshi Singh,](https://www.linkedin.com/in/sakshi-singh-988b9a1aa/ "View Linkdin Profile") [Sanchita](https://www.linkedin.com/in/sanchita-mishra-1b622a196/ "View Linkdin Profile")
 <p align="center"><img src="https://github.com/SanchitaMishra170676/Virtual-Hackathon/blob/master/Virtual-Hackathon/images/logo.png" width="300"/></p>
