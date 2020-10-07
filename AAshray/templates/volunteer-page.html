@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      {% load static %}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Dynalight' rel='stylesheet'>
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Welcome</title>
+    <style media="screen">
+      body{
+         font-family: "Times New Roman", Times, serif;
+         padding-left: 20px;
+         padding-right: 20px;
+         padding-top: 200px;
+      }
+      .sbt{
+       background-color: lightgrey;
+     }
+     .card {
+box-shadow: 0 6px 8px 4px rgba(0,0,0,0.2)
+}
+    </style>
+  </head>
+  <body>
+    <!-- nav -->
+    <div id="navbar">
+    <a href="#default" id="logo"><img src="{% static 'images/logo.png' %}" alt="image" style="width:200px;height:100px";></a>
+    <div id="navbar-right">
+      <div>
+      <a class="ns" href="index.html">Home</a>
+      <a class="ns" href="about-us.html">About Us</a>
+      <a class="ns mr-4" href="feedback.html">Contact Us</a> </div>
+        <div class="col d-flex justify-content-end">
+          <p class="mt-3 d-flex">
+            <a href="www.facebook.com" class="d-flex align-items-center justify-content-center ns"><span class="fa fa-facebook mx-2" style="color:black"><i class="sr-only">Facebook</i></span></a>
+            <a href="www.twitter.com" class="d-flex align-items-center justify-content-center ns"><span class="fa fa-twitter mx-2" style="color: black"><i class="sr-only">Twitter</i></span></a>
+            <a href="www.instagram.com" class="d-flex align-items-center justify-content-center ns"><span class="fa fa-instagram mx-2" style="color: black"><i class="sr-only">Instagram</i></span></a>
+            <a href="www.dribbble.com" class="d-flex align-items-center justify-content-center ns"><span class="fa fa-dribbble mx-2" style="color: black"><i class="sr-only">Dribbble</i></span></a>
+          </p>
+        </div>
+    </div>
+  </div>
+  <!-- nav -end -->
+    <div class="heading d-flex justify-content-center">
+      <h1>Volunteer Section</h1><br><br>
+    </div>
+    <div class="row">
+      <div class="img-fluid col-6 wow slideInLeft">
+        <img src="{% static 'images/vol.png' %}" alt="">
+      </div>
+      <div class="col-6 wow slideInRight">
+              <div class="card">
+                <div class="d-flex justify-content-center card-title p-4">
+                  <h3 id="fet"><pre>{{uname}}</pre></h3><h3><pre> Please specify the following details</pre></h3>
+<!--                    <p> <pre>{{uname}}</pre> </p>-->
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="row form-group">
+                        <label class="col-2"for="status">Status</label>
+                        <select class="form-control col-10" id="Status" name="Status" required>
+                          <option value="Active">Active</option>
+                          <option value="Deactive">Inactive</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label class="col-2" for="Investment">Investment</label>
+                        <select  class="form-control col-10 " id="Investment" name="Investment" required>
+                          <option value="Active">500/-</option>
+                          <option value="Deactive">1000/-</option>
+                          <option value="Deactive">1500/-</option>
+                          <option value="Deactive">2000/-</option>
+                          <option value="Deactive">2500/-</option>
+                          <option value="Deactive">3000/-</option>
+                          <option value="Deactive">5000/-</option>
+                        </select>
+                    </div>
+                    <div class="row mt-3">
+                      <input class="form-control col-12 sbt" type="submit" value="Submit" name="submit">
+                    </div>
+                    </form>
+                        <div class="d-flex justify-content-center card-title p-4">
+                            <button class="form-control col-12 " onclick="getdata()" value="">Edit your information</button>
+<!--                              <input class="form-control col-12 sbt" onclick="getdata()" value="Edit your information" name="update" >-->
+
+                        </div>
+                        <form>
+                          <div class="row form-group">
+                              <label class="col-2"  for="Phone">Phone Number</label>
+                               <textarea class="form-control col-10" type="text" id="phone" name="Phone Number" placeholder="Your Phone Number.." style="height:50px"></textarea>
+<!--                              <input class="form-control col-10" type="text" id="phone" name="Phone Number" placeholder="Your Phone Number..">-->
+                          </div>
+                          <div class="row form-group">
+                              <label class="col-2"  for="em">Email</label>
+                               <textarea class="form-control col-10" type="text"id="em" name="Email" placeholder="Your Email.." style="height:50px"></textarea>
+<!--                              <input class="form-control col-10" type="text"id="em" name="Email" placeholder="Your Email..">-->
+                          </div>
+                          <div class="row form-group">
+                              <label class="col-2"  for="add">Address</label>
+                              <textarea class="form-control col-10" id="add" name="Address" placeholder="Your address" style="height:200px"></textarea>
+                          </div>
+                          <div class="row">
+                            <input class="form-control col-12 sbt" type="submit" value="Submit" name="update" id="up">
+                          </div>
+
+                        </form>
+                    </div>
+
+                </div>
+
+              </div>
+
+      </div>
+    </div>
+<!--     <button onclick="getdata()"> Get DATA</button>-->
+ <footer>
+      <div class="container-fluid mt-3" id="bla" style="padding-top: 40px; padding-bottom: 40px; padding-left: 60px; padding-right: 60px;">
+      <div class="container" style="padding-bottom: 50px; padding-top: 50px;">
+
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="footer-widget">
+                      <h3 class="wh" style="margin-bottom: 15px;">Our Services</h3>
+                          <div><i class="fa fa-caret-right" class="wh"></i> <a href="F1signin.html" class="wh">Register as a Volunteer </a></div>
+                          <div><i class="fa fa-caret-right" class="wh"></i> <a href="F2signin.html" class="wh">Need a Volunteer</a></div>
+                          <div><i class="fa fa-caret-right" class="wh"></i> <a href="F4signin.html" class="wh">Register a Shop</a></div>
+                          <div><i class="fa fa-caret-right" class="wh"></i> <a href="F5signin.html" class="wh">Order from a shop</a></div>
+                          <div><i class="fa fa-caret-right" class="wh"></i> <a href="F7signin.html" class="wh">Donate Plasma</a></div>
+                          <div><i class="fa fa-caret-right" class="wh"></i> <a href="F8signin.html" class="wh">Need Plasma</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                      <div class="footer-widget">
+                          <h3 class="wh" style="margin-bottom: 15px;">Quick Links</h3>
+                              <div><i class="fa fa-caret-right" class="wh"></i> <a href="about-us.html" class="wh">About Us </a></div>
+                              <div><i class="fa fa-caret-right" class="wh"></i> <a href="#aim" class="wh">Our Aim</a></div>
+                              <div><i class="fa fa-caret-right" class="wh"></i> <a href="#choose" class="wh">Why Choose us?</a></div>
+                              <div><i class="fa fa-caret-right" class="wh"></i> <a href="#future" class="wh">Future Plan</a></div>
+                              <div><i class="fa fa-caret-right" class="wh"></i> <a href="feedback.html" class="wh">Feedback</a></div>
+                      </div>
+                </div>
+                <div class="col-lg-3">
+                      <div class="footer-widget">
+                          <h3 class="wh" style="margin-bottom: 15px;">Social</h3>
+                              <div><i class="fa fa-facebook " style="color:white;"></i> <a href="www.facebook.com " class="wh" >Facebook</a></div>
+                              <div><i class="fa fa-instagram " style="color:white;" ></i> <a href="www.instagram.com " class="wh" >Instagram</a></div>
+                              <div><i class="fa fa-whatsapp " style="color:white;"></i> <a href="www.whatsapp.com " class="wh">WhatsApp</a></div>
+                              <div><i class="fa fa-twitter " style="color:white;" ></i> <a href="www.twitter.com " class="wh" >Twitter</a></div>
+                              <div><i class="fa fa-dribbble " style="color:white;"></i> <a href="www.dribbble.com " class="wh" >Dribbble</a></div>
+                      </div>
+                </div>
+                <div class="col-lg-3">
+                      <div class="footer-widget">
+                          <h3 class="wh" style="margin-bottom: 15px;">Contact Us</h3>
+                              <div class="wh"><i class="fa fa-map-marker" class="wh"></i> Kiet, Ghaziabad </div>
+                              <div class="wh"><i class="fa fa-phone" class="wh"></i> (+91) 8439705872 </div>
+                              <div class="wh"><i class="fa fa-envelope"class="wh"></i> info.aashray@gmail.com</div>
+                              <div class="wh"><i class="fa fa-clock-o" class="wh"></i> Mon - Sat, 08 AM - 06 PM</div>
+                      </div>
+                </div>
+              </div>
+   </div>
+   <div class="col-sm-12">
+       <p class="ft">Designed with ❤️ By <a target="_blank" style="color:white;" href="about-us.html">Team AAshray</a></p>
+   </div>
+    </footer>
+
+
+
+
+
+
+
+<!--  ///////////////////////////////////////////////////FIREBASE///////////////////////////////////////////////////////////////////////// -->
+
+
+
+        <script type="text/javascript">
+
+
+
+      function getdata() {
+        // var  title =document.getElementById("fet").value;
+        var title = "{{uname}}";
+        console.log("Title =" + title);
+    firebase.database().ref('VolunteerRegistration/'+ title).once('value').then(function (snapshort) {
+    console.log("Entered inside");
+if(snapshort.exists()){
+    var pno=snapshort.val().pno;
+    var email=snapshort.val().email;
+    var address=snapshort.val().address;
+
+
+    document.getElementById("phone").innerHTML=  pno;
+    document.getElementById("em").innerHTML=email;
+    document.getElementById("add").innerHTML=address;
+}
+else{
+  var r = confirm("Please enter correct username");
+    if (r == true){
+      window.location.reload();
+    }
+}
+    });
+
+
+    }
+    //
+
+
+
+
+    </script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-storage.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+       var firebaseConfig = {
+    apiKey: "AIzaSyB_ijt_J0vpqtYFJEQKDYg901LIY3dfRuA",
+    authDomain: "aashray-f603e.firebaseapp.com",
+    databaseURL: "https://aashray-f603e.firebaseio.com",
+    projectId: "aashray-f603e",
+    storageBucket: "aashray-f603e.appspot.com",
+    messagingSenderId: "156602771228",
+    appId: "1:156602771228:web:2ac4f85923eeb384883cd9",
+    measurementId: "G-YB1M1QD4VS"
+  };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+     <script src="{% static 'js/index.js' %}"></script>
+  </body>
+</html>
