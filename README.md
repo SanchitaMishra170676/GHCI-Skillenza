@@ -28,8 +28,8 @@
 > We were inspired by the idea of converting crisis into opportunity by our honorable Prime Minister Mr. Narendra Modi. Further the volunteer's and NGO's who showed great enthusiasm trying to help people in the pandemic inspired us to create a mutual platform for the volunteers and the needy. Moreover, despite the challenges Covid-19 has created, the outbreak has quickly broadened the space for innovation and collaboration within the entrepreneurial ecosystem. Pushing us to recognise just how much we can achieve in a very short amount of time. It has driven a creative solution-focused and collaborative mindset in us!!
 
 ## CONTRACT ACCOUNT
-- With emerging technologies like Blockchain, we've planned to design a consensus to make payments betwwen volunteers and users more trustworthy.
-- User woul make payment into the contract account and based on the situation whether his stuff is delivered or not , payment would go into volunteer's account otherwise roll back to the user, this would make the application more thrustworthy and scalable.
+- With emerging technologies like Blockchain, we've planned to design a consensus to make payments between volunteers and users more trustworthy.
+- User would make payment into the contract account and based on the situation whether his stuff is delivered or not , payment would go into volunteer's account otherwise rollback to the user, this would make the application more thrustworthy and scalable.
 
 
 
@@ -38,13 +38,13 @@
 - **BACKEND** 	  : Django, Firebase
 - **BLOCKCHAIN** : Ethereum, Node, Web-3, MetaMask, 
     Ganache, Truffle,JavaScript, Solidity
-- **EDITORS**           : Atom, Visual Studio Code, Xampp 
+- **EDITORS**           : Atom, Visual Studio Code
 
 
 
 ## WHAT IF VACCINE ARRIVES
 - The arrival of vaccine would lead to a great rush in the hospitals and pharmacy sector, which for obvious reasons won’t be good for health especially the senior citizens who are more prone to the disease.
-- We’ve planned to inculcate the feature of calling trained volunteers who follow all the safety norms while they visit the houses for vaccination. 
+- We’ve planned to inculcate the feature of calling government authorised volunteers who follow all the safety norms while they visit the houses for vaccination. 
 - This would not only prevent the people from standing in long queues but also offer an edge to the elderly and specially abled people to get vaccinated at the comfort of their home.This would boost the economy without any stress of affecting citizen’s life.
 
 
@@ -52,11 +52,11 @@
 ## UNIQUE SELLING POINTS
 > We're proud to share that we provided security to our users by using proper authentication for both users and volunteers. Moreover the blockchain network makes it most secure for payment and transfers. Additionally it was wonderful designing the site and connecting it structurally to make it user-friendly.
 Not only we connect the people in need with the volunteers but also bear the other feature which help people both economically and medically.
-With features like plasma donation, precautionary advice and motivational sources along with the connecting the volunteers to the needy make this a robust project. It also provides the opportunity to expand one’s business via the shop registration and order features!
+With features like plasma donation, precautionary advice and motivational sources along with connecting volunteers to the needy make this a robust project. It also provides the opportunity to expand one’s business via the shop registration and order features!
 
 
 ## CHALLENGES WE FACED
-> The biggest challenge in front of of us was to provide security to our users as to how could we deal with the payment system without any trust issues. Choosing the best technology to build this application was another major challenge. 
+> The biggest challenge in front of us was to provide security to our users as to how could we deal with the payment system without any trust issues. Choosing the best technology to build this application was another major challenge. 
 Finally we ended up deciding the use of structured databases for storing information and identity for security purpose while using decentralized approach for the payment purpose with proper smart contracts that are capable of dealing with the fraud situations.
 
 ## FUTURE PLANS FOR AASHRAY
