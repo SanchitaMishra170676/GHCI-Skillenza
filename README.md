@@ -31,7 +31,7 @@
 
 ## PROPOSED TECHSTACK
 - **FRONTEND**     : HTML5, CSS3, Bootstrap4, JavaScript,JQuery 
-- **BACKEND** 	  : MySql, PHP
+- **BACKEND** 	  : Django, Firebase
 - **BLOCKCHAIN** : Ethereum, Node, Web-3, MetaMask, 
     Ganache, Truffle,JavaScript, Solidity
 - **EDITORS**           : Atom, Visual Studio Code, Xampp 
