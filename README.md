@@ -1,6 +1,6 @@
 # Virtual Hackathon
 
-# QUARANTEAM : Vanshika Singhal, Sakshi Singh, Sanchita Mishra
+## QUARANTEAM : Vanshika Singhal, Sakshi Singh, Sanchita Mishra
 <p align="center"><img src="https://github.com/SanchitaMishra170676/Virtual-Hackathon/blob/master/Virtual-Hackathon/images/logo.png" width="300"/></p>
 
 
