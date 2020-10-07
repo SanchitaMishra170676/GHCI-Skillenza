@@ -9,6 +9,9 @@
   </p>
   <br>
 
+
+## [Click on the image or here to Watch Video](https://www.youtube.com/watch?v=Hslm-TOzNNE&feature=youtu.be)
+## [View presentation](https://docs.google.com/presentation/d/1JMJr4rApRHw1p7j-3FVPsj-LVhrxdgDMS9Q-8s2KDAA/edit#slide=id.g95192153f1_2_0)
 ## PROBLEMS
 > Civic organizations provide humanitarian assistance to individuals, groups, other organizations, and institutions that are less fortunate and in need. They address certain concerns that the government is unable to answer. Unfortunately, because of the pandemic affecting us and the restrictions placed because of it, civic organizations and other like minded groups are now limited in their interactions with their beneficiaries and thus are unable to connect with the people who are a little fortunate but they also need these basic necessities for their survival in this pandemic situation.
 
