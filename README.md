@@ -1,4 +1,5 @@
-# GHCI 20 Codeathon for Women Students by AnitaB.org
+# GHCI 20 Codeathon 
+### by AnitaB.org
 
 ## QUARANTEAM : Vanshika Singhal, Sakshi Singh, Sanchita Mishra
 <p align="center"><img src="https://github.com/SanchitaMishra170676/GHCI-Skillenza/blob/master/AAshray/statics/images/logo.png" width="300"/></p>
