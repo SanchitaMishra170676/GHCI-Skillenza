@@ -71,7 +71,7 @@ We're planning to make it multi platform and add some additional features along 
 
 ## How to get started ?
 - Clone the repository
-- cd to folder containg manage.py
+- Change directory to folder containg manage.py
 - python manage.py runserver
 - You've got it running in the localhost
 - Note*: Your information would be sent to our database in case you fill the details even on the local host...
